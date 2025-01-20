@@ -1,3 +1,4 @@
+import pysqlite3
 import streamlit as st
 from streamlit_chat import message
 from langchain_community.document_loaders import PyPDFLoader  # Use PDFLoader instead of TextLoader
