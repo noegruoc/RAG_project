@@ -119,16 +119,8 @@ if "generated" not in st.session_state:
 if "past" not in st.session_state:
     st.session_state["past"] = []
 
-# Text input field with the reset behavior
-def handle_input():
-    # Text input with default text
-    user_input = st.text_input("You", "Hello ! Que voulez vous savoir sur les résultats ou la dernière conférence de presse ?", key="input")
-    if user_input == "Hello ! Que voulez vous savoir sur les résultats ou la dernière conférence de presse ?":
-        user_input = ""  # Reset if default text is still there
-    return user_input
-
 with st.form(key="form"):
-    user_input = handle_input()
+    user_input = st.text_input("You", "Hello ! Que voulez vous savoir sur les résultats ou la dernière conférence de presse ?", key="input")
     submit_button_pressed = st.form_submit_button("Submit to RAG")
 
 if submit_button_pressed:
