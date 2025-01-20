@@ -44,7 +44,8 @@ sensitive = ["poem", "verse", "rhyme", "haiku", "song", "lyric", "stanza", "arti
     "child labor", "exploitation", "labor issues", "social injustice"]
 
 #directory of db
-persist_directory = r"C:\Users\courg\chroma_db"
+persist_directory = "."
+#persist_directory = r"C:\Users\courg\chroma_db"
 
 # Initialize embeddings and vector store
 embeddings = MistralAIEmbeddings(model="mistral-embed", mistral_api_key=api_key) #mistral model for embeddings
