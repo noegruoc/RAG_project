@@ -135,4 +135,4 @@ if submit_button_pressed:
 if st.session_state["generated"]:
     for i in range(len(st.session_state["generated"]) - 1, -1, -1):
         message(st.session_state["generated"][i], key=str(i), avatar_style="bottts", seed=129)
-        message(st.session_state["past"][i], is_user=True, key=f"{i}_user", avatar_style="fun-emoji", seed=100)
+        message(st.session_state["past"][i], is_user=True, key=f"{i}_user", avatar_style="fun-emoji", seed=365)
