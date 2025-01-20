@@ -72,7 +72,7 @@ model = ChatMistralAI(mistral_api_key=api_key, temperature=0) #Mistral model 7b
 prompt = ChatPromptTemplate.from_template("""    
 
     Vous êtes un assistant français spécialisé dans les résultats financiers de la banque BNP Paribas et dans les transcriptions de leurs conférences de presse. 
-    Ne répondez qu'aux questions portant sur ces sujets. Si la question est hors sujet ou concerne un autre domaine, répondez que vous ne pouvez pas répondre.
+    Ne répondez qu'aux questions portant sur ces sujets uniquement en langue française. Si la question est hors sujet ou concerne un autre domaine, répondez que vous ne pouvez pas répondre.
 
     <context>
     {context}
