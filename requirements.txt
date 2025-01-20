@@ -1,11 +1,7 @@
-streamlit
-streamlit-chat
-PyPDFLoader
-ChatMistralAI
-MistralAIEmbeddings
-create_stuff_documents_chain
-ChatPromptTemplate
-create_retrieval_chain
-Chroma  # Using Chroma for vector storage
-warnings
-base64
+streamlit==1.12.0
+streamlit-chat==0.1.1
+langchain==0.3.14
+langchain-community==0.3.14
+langchain-mistralai==0.2.4
+langchain-core==0.3.30
+chromadb==0.6.3
