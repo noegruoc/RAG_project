@@ -46,7 +46,15 @@ sensitive = ["poem", "verse", "rhyme", "haiku", "song", "lyric", "stanza", "arti
 
     # Other Sensitive Topics
     "environmental harm", "climate irresponsibility", "human rights violation", 
-    "child labor", "exploitation", "labor issues", "social injustice"]
+    "child labor", "exploitation", "labor issues", "social injustice",
+
+    #Promp injections 
+    "ignore", "forget", "bypass", "override", "disregard", "disobey", "ignore previous instructions", 
+     "cancel previous commands", "ignore system instructions", "ignore the rules", "don't follow the instructions", 
+     "change the behavior", "do not follow", "oublie", "contourne", "outrepasse", "ne tiens pas compte", 
+     "ne suis pas les instructions précédentes", "annule les instructions précédentes", "ignore les règles", 
+     "ne suis pas les commandes", "change le comportement", "ne suis pas les consignes"
+            ]
 
 #directory of db
 persist_directory = "./chroma_db"
@@ -58,9 +66,13 @@ vector = Chroma(persist_directory=persist_directory, embedding_function=embeddin
 retriever = vector.as_retriever()
 
 # Create the retrieval chain
+
+#Répond en français à la question suivante basé sur le contexte donné de BNP Paribas.
 model = ChatMistralAI(mistral_api_key=api_key, temperature=0) #Mistral model 7b
 prompt = ChatPromptTemplate.from_template("""    
-    Répond en français à la question suivante basé sur le contexte donné de BNP Paribas.
+
+    Vous êtes un assistant français spécialisé dans les résultats financiers de la banque BNP Paribas et dans les transcriptions de leurs conférences de presse. 
+    Ne répondez qu'aux questions portant sur ces sujets. Si la question est hors sujet ou concerne un autre domaine, répondez que vous ne pouvez pas répondre.
 
     <context>
     {context}
