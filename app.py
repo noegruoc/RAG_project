@@ -120,7 +120,11 @@ if "past" not in st.session_state:
     st.session_state["past"] = []
 
 with st.form(key="form"):
-    user_input = st.text_input("You", "Hello ! Que voulez vous savoir sur les résultats ou la dernière conférence de presse ?", key="input")
+    user_input = st.text_input(
+        label="You", 
+        placeholder="Hello! Que voulez-vous savoir sur les résultats ou la dernière conférence de presse ?", 
+        key="input"
+    )
     submit_button_pressed = st.form_submit_button("Submit to RAG")
 
 if submit_button_pressed:
