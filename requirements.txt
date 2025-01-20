@@ -1,0 +1,11 @@
+streamlit
+message
+PyPDFLoader
+ChatMistralAI
+MistralAIEmbeddings
+create_stuff_documents_chain
+ChatPromptTemplate
+create_retrieval_chain
+Chroma  # Using Chroma for vector storage
+warnings
+base64
