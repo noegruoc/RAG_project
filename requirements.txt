@@ -1,5 +1,5 @@
 streamlit
-message
+streamlit-chat
 PyPDFLoader
 ChatMistralAI
 MistralAIEmbeddings
