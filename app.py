@@ -34,7 +34,15 @@ sensitive = ["poem", "verse", "rhyme", "haiku", "song", "lyric", "stanza", "arti
 
     # Competitors
     "competitors", "rivalry", "market share", "industry competition",
-    "brand war", "market dominance",
+    "brand war", "market dominance", "Société Générale", "Crédit Agricole",
+    "Crédit Mutuel", "La Banque Postale",
+    "LCL", "AXA Banque", "CIC",
+    "HSBC", "Banque Populaire", "Banque de France",
+    "JPMorgan Chase", "Bank of America", "Citigroup", "Wells Fargo",
+    "Goldman Sachs", "Morgan Stanley", "Deutsche Bank", "Barclays",
+    "UBS", "Credit Suisse",
+    "Deutsche Bank", "Barclays", "UBS", "Santander", "Lloyds",
+    "ING", "UniCredit", "Raiffeisen", "Commerzbank"
 
     # Legal Issues
     "lawsuit", "penalty", "fine", "legal dispute", "non-compliance", 
